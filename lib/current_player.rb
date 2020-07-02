@@ -1,19 +1,21 @@
 
-
 def turn_count(board)
   counter = 0
-  index = 0
   
-  while counter < board.length
-  counter += 1
-  index += 1
+ board.each do |spot|
   
-  if board[index] == "X" || board[index] == "O"
+ if board[counter] == "X" || board[counter] == "O"
   
+  #so if a spot is taken, increment the counter
   puts "this is the counter #{counter}"
-  return counter
+  puts "this is the spot or index #{spot}"
+  
+  counter += 1
+  
   end
- end
+ 
+ 
+end
 end
 
 
