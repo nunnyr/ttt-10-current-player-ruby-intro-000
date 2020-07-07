@@ -4,7 +4,7 @@ def turn_count(board)
   
  board.each do |spot|
   
- if board[counter] == "X" || board[counter] == "O"
+ if board[spot] == "X" || board[spot] == "O"
   
   #so if a spot is taken, increment the counter
   puts "this is the counter #{counter}"
@@ -12,10 +12,10 @@ def turn_count(board)
   
   counter += 1
   
+ 
   end
- 
- 
-end
+ end
+ return counter
 end
 
 
